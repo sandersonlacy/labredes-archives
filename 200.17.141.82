@@ -1,0 +1,8 @@
+server{
+  server_name 200.17.141.82;
+  root /var/www/html;
+  index index.html;
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
+}
